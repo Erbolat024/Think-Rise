@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сабақ тапсырмалары</title>
+
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="sidebar-mobile.css">
+  <link rel="stylesheet" href="admin-css/lesson-tasks.css">
+</head>
+<body>
+
+<main class="admin-main">
+  <div class="page-header">
+    <div>
+      <h1>Сабақ тапсырмалары</h1>
+      <p id="lessonTitle">Жүктелуде...</p>
+    </div>
+
+    <a href="tasks.html" class="add-btn">+ Тапсырма қосу</a>
+  </div>
+
+  <div id="tasksList" class="tasks-list"></div>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="sidebar.js"></script>
+<script type="module" src="admin-js/lesson-tasks.js"></script>
+</body>
+</html>

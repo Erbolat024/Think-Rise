@@ -1,0 +1,178 @@
+.admin-main {
+  padding: 28px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.page-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.tasks-list {
+  display: grid;
+  gap: 16px;
+}
+
+.task-card,
+.empty-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.07);
+}
+
+.task-card {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 18px;
+  align-items: center;
+}
+
+.task-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.task-content h3 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.task-content p {
+  margin: 0 0 8px;
+  color: #6b7280;
+}
+
+.task-type {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.status-btn,
+.delete-task-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 11px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.status-btn.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-btn.inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.delete-task-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: #111827;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 14px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.25s;
+  z-index: 3000;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.error {
+  background: #ef4444;
+}
+
+.toast.success {
+  background: #16a34a;
+}
+
+@media (max-width: 768px) {
+  .admin-main {
+    padding: 22px 16px 40px;
+  }
+
+  .page-header {
+    margin-left: 56px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .task-card {
+    grid-template-columns: 1fr;
+  }
+
+  .task-actions {
+    flex-direction: column;
+  }
+}
+
+
+.edit-btn {
+  background: #facc15;
+  color: #78350f;
+  border: none;
+  border-radius: 12px;
+  padding: 11px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 11px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}

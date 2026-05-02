@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сыныптар</title>
+
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="admin-css/classes.css">
+  <link rel="stylesheet" href="sidebar-mobile.css">
+</head>
+<body>
+
+<main class="admin-main">
+
+  <div class="page-header">
+    <h1>Сыныптар</h1>
+    <button id="addClassBtn">+ Сынып қосу</button>
+  </div>
+
+  <div class="classes-list" id="classesList"></div>
+
+</main>
+<div class="toast" id="toast"></div>
+
+<div class="modal" id="classModal">
+  <div class="modal-content">
+    <h3 id="modalTitle">Сынып қосу</h3>
+
+    <input id="classInput" placeholder="Мысалы: 9A">
+
+    <div class="modal-actions">
+      <button id="saveClassBtn">Сақтау</button>
+      <button id="cancelClassBtn">Отмена</button>
+    </div>
+  </div>
+</div>
+<script src="sidebar.js"></script>
+<script type="module" src="admin-js/classes.js"></script>
+</body>
+</html>

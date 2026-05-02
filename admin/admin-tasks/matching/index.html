@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сәйкестендіру</title>
+
+  <link rel="stylesheet" href="../../sidebar.css">
+  <link rel="stylesheet" href="../../sidebar-mobile.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="admin-main">
+  <div class="page-header">
+    <div>
+      <h1>Сәйкестендіру</h1>
+      <p>Сол жақтағы ұғымдарды оң жақтағы жауаптармен сәйкестендіру тапсырмасын жасаңыз</p>
+    </div>
+  </div>
+
+  <section class="builder-layout">
+    <div class="builder-card">
+      <h2>Тапсырма құру</h2>
+
+      <label>Сынып</label>
+      <select id="classSelect">
+        <option value="">Сынып таңдаңыз</option>
+      </select>
+
+      <label>Бөлім</label>
+      <select id="sectionSelect" disabled>
+        <option value="">Алдымен сынып таңдаңыз</option>
+      </select>
+
+      <label>Сабақ</label>
+      <select id="lessonSelect" disabled>
+        <option value="">Алдымен бөлім таңдаңыз</option>
+      </select>
+
+      <label>Тапсырма атауы</label>
+      <input id="taskTitle" placeholder="Мысалы: Органоидтар қызметі">
+
+      <label>Нұсқаулық</label>
+      <textarea id="taskInstruction" placeholder="Сол жақтағы ұғымдарды оң жақтағы жауаптармен сәйкестендіріңіз"></textarea>
+
+      <label>Жұптар</label>
+      <div id="pairsContainer" class="pairs-container"></div>
+
+      <button id="addPairBtn" type="button" class="main-btn">+ Жұп қосу</button>
+
+      <button id="saveTaskBtn" class="save-btn">Сақтау</button>
+    </div>
+
+    <div class="preview-card">
+      <h2>Preview</h2>
+
+      <div class="preview-box">
+        <h3 id="previewTitle">Тапсырма атауы</h3>
+        <p id="previewInstruction">Нұсқаулық осы жерде шығады</p>
+
+        <div class="preview-table">
+          <div class="preview-head">Ұғым</div>
+          <div class="preview-head">Жауап</div>
+          <div id="previewPairs" class="preview-pairs"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="../../sidebar.js"></script>
+<!-- негізгі логика -->
+<script type="module" src="script.js"></script>
+</body>
+</html>

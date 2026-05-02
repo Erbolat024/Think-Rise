@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Тапсырма</title>
+
+  <link rel="stylesheet" href="./css/student.css">
+  <link rel="stylesheet" href="./css/task.css">
+</head>
+<body>
+
+<div id="studentLayout"></div>
+
+<main class="main-content">
+
+  <div class="task-header">
+    <button id="backBtn">← Сабаққа қайту</button>
+    <span id="taskType"></span>
+  </div>
+
+  <div class="task-card">
+    <h1 id="taskTitle">Жүктелуде...</h1>
+    <p id="taskInstruction"></p>
+
+    <div id="taskContent"></div>
+
+    <div class="task-actions">
+      <button id="checkBtn">Тексеру</button>
+      <button id="retryBtn" hidden>Қайта орындау</button>
+    </div>
+
+    <div id="taskResult"></div>
+  </div>
+
+</main>
+
+<script type="module" src="./js/task.js"></script>
+</body>
+</html>

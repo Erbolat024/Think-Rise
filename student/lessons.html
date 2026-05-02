@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сабақтар</title>
+
+  <link rel="stylesheet" href="./css/student.css" />
+  <link rel="stylesheet" href="./css/lessons.css" />
+</head>
+<body>
+
+  <div id="studentLayout"></div>
+
+  <main class="main-content">
+    <header class="lessons-header">
+      <div>
+        <h1>Сабақтар</h1>
+        <p>Өзіңнің сыныбыңа бекітілген сабақтар тізімі</p>
+      </div>
+    </header>
+
+    <section class="student-info-box">
+      <div>
+        <span>Оқушы</span>
+        <strong id="studentName">Жүктелуде...</strong>
+      </div>
+
+      <div>
+        <span>Сынып</span>
+        <strong id="studentClass">Анықталуда...</strong>
+      </div>
+    </section>
+
+    <section id="lessonsContainer" class="lessons-container">
+      <div class="loading-box">Сабақтар жүктелуде...</div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/lessons.js"></script>
+</body>
+</html>

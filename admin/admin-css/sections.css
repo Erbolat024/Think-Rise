@@ -1,0 +1,234 @@
+.page-header {
+  margin-bottom: 22px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.page-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+}
+
+.class-tabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.class-tab {
+  border: none;
+  background: #fff;
+  padding: 14px 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.class-tab.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.section-toolbar {
+  background: #fff;
+  padding: 18px;
+  border-radius: 18px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.section-toolbar h2 {
+  margin: 0;
+}
+
+.section-toolbar button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.sections-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.section-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.section-card h3 {
+  margin: 0 0 8px;
+}
+
+.section-card p {
+  color: #6b7280;
+  min-height: 40px;
+}
+
+.section-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.section-actions button {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #facc15;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.empty-text {
+  color: #6b7280;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2500;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  width: 430px;
+  background: white;
+  padding: 26px;
+  border-radius: 20px;
+}
+
+.modal-content h3 {
+  margin: 0 0 16px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.modal-content textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-actions button {
+  border: none;
+  padding: 11px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#saveSectionBtn {
+  background: #2563eb;
+  color: white;
+}
+
+#cancelSectionBtn {
+  background: #e5e7eb;
+}
+
+.toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: #111827;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 14px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.25s;
+  z-index: 3000;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.error {
+  background: #ef4444;
+}
+
+.toast.success {
+  background: #16a34a;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    margin-left: 60px;
+  }
+
+  .page-header h1 {
+    font-size: 26px;
+  }
+
+  .class-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .section-toolbar button {
+    width: 100%;
+  }
+
+  .sections-list {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}

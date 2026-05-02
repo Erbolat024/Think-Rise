@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оқушы кабинеті</title>
+
+  <link rel="stylesheet" href="./css/student.css" />
+  <link rel="stylesheet" href="./css/dashboard.css" />
+</head>
+<body>
+
+  <div id="studentLayout"></div>
+
+  <main class="main-content">
+    <header class="dashboard-header">
+      <div>
+        <h1>Оқушы кабинеті</h1>
+        <p>Қош келдің! Бүгін сабақтарды жалғастырамыз 🚀</p>
+      </div>
+
+      <div class="student-card-small">
+        <div class="student-avatar" id="studentAvatar">О</div>
+        <div>
+          <strong id="headerStudentName">Оқушы</strong>
+          <span id="headerStudentClass">Сынып</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="welcome-card">
+      <div>
+        <span class="welcome-badge">Жеке кабинет</span>
+        <h2 id="studentName">Жүктелуде...</h2>
+        <p id="studentEmail">email</p>
+        <div class="class-pill" id="studentClass">Сынып анықталуда...</div>
+      </div>
+
+      <div class="welcome-right">
+        <p>Өзіңе бекітілген сабақтарды көріп, тапсырмаларды орында.</p>
+        <a href="./lessons.html" class="primary-btn">Сабақтарға өту</a>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📂</div>
+        <span>Бөлімдер</span>
+        <strong id="sectionsCount">0</strong>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">📘</div>
+        <span>Сабақтар</span>
+        <strong id="lessonsCount">0</strong>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">📝</div>
+        <span>Тапсырмалар</span>
+        <strong id="tasksCount">0</strong>
+      </div>
+    </section>
+
+    <section class="dashboard-grid">
+      <div class="info-card">
+        <h3>📚 Сабақтар</h3>
+        <p>Сыныбыңа бекітілген бөлімдер мен сабақтар осы жерде орналасады.</p>
+        <a href="./lessons.html">Сабақтарды ашу →</a>
+      </div>
+
+      <div class="info-card">
+        <h3>📊 Нәтижелер</h3>
+        <p>Кейін тапсырма нәтижелері осы бөлімде көрсетіледі.</p>
+        <a href="./results.html">Нәтижелерді көру →</a>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/dashboard.js"></script>
+  
+</body>
+</html>

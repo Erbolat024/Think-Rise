@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Профиль</title>
+
+  <link rel="stylesheet" href="./css/student.css">
+  <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+
+<div id="studentLayout"></div>
+
+<main class="main-content">
+
+  <header class="profile-header">
+    <div>
+        <h1>Профиль</h1>
+        <p>Жеке ақпарат</p>
+    </div>
+
+    <button id="logoutBtn" class="logout-btn">
+        Шығу
+    </button>
+  </header>
+
+  <section class="profile-card">
+
+    <div class="profile-row">
+      <span>Аты</span>
+      <input id="profileName" />
+    </div>
+
+    <div class="profile-row">
+      <span>Email</span>
+      <strong id="profileEmail"></strong>
+    </div>
+
+    <div class="profile-row">
+      <span>ID</span>
+      <strong id="profileId"></strong>
+    </div>
+
+    <div class="profile-row">
+      <span>Сынып</span>
+      <strong id="profileClass"></strong>
+    </div>
+
+    <button id="saveBtn" class="save-btn">Сақтау</button>
+
+  </section>
+
+</main>
+
+<script type="module" src="./js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #111827;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  z-index: 1000;
+}
+
+/* 👇 default (жабық) */
+.admin-sidebar.collapsed {
+  width: 80px;
+}
+
+/* 👇 ашық */
+.admin-sidebar:not(.collapsed) {
+  width: 260px;
+}
+
+/* logo */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.logo-text {
+  transition: 0.2s;
+}
+
+/* меню */
+.sidebar-menu {
+  flex: 1;
+  padding: 10px;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.sidebar-menu a:hover {
+  background: #1f2937;
+}
+
+.sidebar-menu a.active {
+  background: #2563eb;
+  color: white;
+}
+
+.sidebar-menu span {
+  font-size: 20px;
+}
+
+/* текст */
+.sidebar-menu p,
+.logo-text,
+.sidebar-bottom p {
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+/* 👇 ЖАБЫҚ кезде текст жоқ */
+.admin-sidebar.collapsed p,
+.admin-sidebar.collapsed .logo-text {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+/* төменгі бөлік */
+.sidebar-bottom {
+  padding: 10px;
+}
+
+.sidebar-bottom button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-main {
+  margin-left: 80px;
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.admin-sidebar:not(.collapsed) ~ .admin-main {
+  margin-left: 260px;
+}
+
+/* мобильді меню батырмасы */
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 2000;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 22px;
+}

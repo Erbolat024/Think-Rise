@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бос орынды толтыру</title>
+
+  <link rel="stylesheet" href="../../sidebar.css">
+  <link rel="stylesheet" href="../../sidebar-mobile.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="admin-main">
+  <div class="page-header">
+    <div>
+      <h1>Бос орынды толтыру</h1>
+      <p>Мәтіндегі бос орындарға дұрыс жауап енгізу тапсырмасы</p>
+    </div>
+  </div>
+
+  <section class="builder-layout">
+    <div class="builder-card">
+      <h2>Тапсырма құру</h2>
+
+      <label>Сынып</label>
+      <select id="classSelect">
+        <option value="">Сынып таңдаңыз</option>
+      </select>
+
+      <label>Бөлім</label>
+      <select id="sectionSelect" disabled>
+        <option value="">Алдымен сынып таңдаңыз</option>
+      </select>
+
+      <label>Сабақ</label>
+      <select id="lessonSelect" disabled>
+        <option value="">Алдымен бөлім таңдаңыз</option>
+      </select>
+
+      <label>Тапсырма атауы</label>
+      <input id="taskTitle" placeholder="Мысалы: Жасуша туралы мәтін">
+
+      <label>Мәтін</label>
+      <textarea id="taskText" placeholder="Мысалы: Жасуша — тірі ағзалардың {құрылымдық} және {қызметтік} бірлігі."></textarea>
+
+      <p class="helper-text">
+        Бос орын болатын сөзді фигуралы жақшаға жазыңыз: {ядро}
+      </p>
+
+      <button id="saveTaskBtn" class="save-btn">Сақтау</button>
+    </div>
+
+    <div class="preview-card">
+      <h2>Preview</h2>
+
+      <div class="preview-box">
+        <h3 id="previewTitle">Тапсырма атауы</h3>
+
+        <div id="previewText" class="preview-text">
+          Мәтін осы жерде шығады
+        </div>
+
+        <div id="answersList" class="answers-list"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="../../sidebar.js"></script>
+<!-- негізгі логика -->
+<script type="module" src="script.js"></script>
+</body>
+</html>

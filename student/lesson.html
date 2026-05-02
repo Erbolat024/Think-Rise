@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сабақ</title>
+
+  <link rel="stylesheet" href="./css/student.css" />
+  <link rel="stylesheet" href="./css/lesson.css" />
+</head>
+<body>
+
+  <div id="studentLayout"></div>
+
+  <main class="main-content">
+    <header class="lesson-header">
+      <a href="javascript:history.back()" class="back-link">← Артқа қайту</a>
+      <h1 id="lessonTitle">Сабақ жүктелуде...</h1>
+      <p id="lessonSection">Бөлім анықталуда...</p>
+    </header>
+
+    <section class="lesson-layout">
+      <div class="lesson-content-card">
+        <h2>Конспект</h2>
+        <div id="lessonContent" class="lesson-content">
+          Жүктелуде...
+        </div>
+      </div>
+
+      <aside class="lesson-video-card">
+        <h2>Видео сабақ</h2>
+        <div id="lessonVideo" class="video-box">
+          Видео қосылмаған
+        </div>
+      </aside>
+    </section>
+
+    <section class="tasks-section">
+      <div class="tasks-header">
+        <h2>Тапсырмалар</h2>
+        <p>Осы сабаққа бекітілген тапсырмалар тізімі</p>
+      </div>
+
+      <div id="tasksList" class="tasks-list">
+        <div class="loading-box">Тапсырмалар жүктелуде...</div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/lesson.js"></script>
+</body>
+</html>

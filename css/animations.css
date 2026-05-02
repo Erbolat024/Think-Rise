@@ -1,0 +1,54 @@
+/* HERO TEXT APPEAR */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-left {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* IMAGE FLOAT */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.hero-right img {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* CARDS ANIMATION */
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* BUTTON HOVER */
+.btn,
+.btn-outline {
+  transition: 0.3s ease;
+}
+
+.btn:hover,
+.btn-outline:hover {
+  transform: translateY(-3px);
+}

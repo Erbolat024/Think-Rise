@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+
+  <link rel="stylesheet" href="sidebar.css" />
+  <link rel="stylesheet" href="admin-css/dashboard.css" />
+  <link rel="stylesheet" href="sidebar-mobile.css" />
+</head>
+<body>
+
+  <main class="admin-main">
+    <div class="dashboard-header">
+      <div>
+        <h1>Dashboard</h1>
+        <p>Жүйенің жалпы статистикасы</p>
+      </div>
+
+      <div class="header-badge">
+        Admin Panel
+      </div>
+    </div>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">📚</span>
+        <div>
+          <p>Пәндер</p>
+          <h2 id="subjectsCount">0</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">🧩</span>
+        <div>
+          <p>Бөлімдер</p>
+          <h2 id="sectionsCount">0</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">📝</span>
+        <div>
+          <p>Сабақтар</p>
+          <h2 id="lessonsCount">0</h2>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">👨‍🎓</span>
+        <div>
+          <p>Оқушылар</p>
+          <h2 id="studentsCount">0</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard-content">
+      <div class="panel">
+        <h3>Жылдам әрекеттер</h3>
+
+        <div class="quick-actions">
+          <a href="classes.html">+ Сынып қосу</a>
+          <a href="sections.html">+ Бөлім қосу</a>
+          <a href="lessons.html">+ Сабақ қосу</a>
+          <a href="tasks.html">+ Тапсырмалар қосу</a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Жүйе статусы</h3>
+
+        <div class="status-list">
+          <div>
+            <span>Supabase</span>
+            <b class="success">Қосулы</b>
+          </div>
+          <div>
+            <span>Admin mode</span>
+            <b class="success">Active</b>
+          </div>
+          <div>
+            <span>Content system</span>
+            <b class="warning">MVP</b>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="sidebar.js"></script>
+  <script type="module" src="admin-js/dashboard.js"></script>
+</body>
+</html>

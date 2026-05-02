@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сабақтар</title>
+
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="admin-css/sections.css"> <!-- reuse -->
+  <link rel="stylesheet" href="sidebar-mobile.css">
+</head>
+<body>
+
+<main class="admin-main">
+  <div class="page-header">
+    <div>
+      <h1>Сабақтар</h1>
+      <p>Бөлім таңдаңыз, кейін сабақ қосыңыз</p>
+    </div>
+  </div>
+
+  <section class="class-tabs" id="sectionTabs"></section>
+
+  <section class="section-toolbar" id="lessonToolbar" style="display:none;">
+    <h2 id="selectedSectionTitle">Бөлім</h2>
+    <button id="addLessonBtn">+ Сабақ қосу</button>
+  </section>
+
+  <section class="sections-list" id="lessonsList"></section>
+</main>
+
+<!-- MODAL -->
+<div class="modal" id="lessonModal">
+  <div class="modal-content">
+    <h3 id="modalTitle">Сабақ қосу</h3>
+
+    <input id="lessonTitleInput" placeholder="Сабақ атауы">
+    <textarea id="lessonContentInput" placeholder="Сабақ мазмұны"></textarea>
+    <input id="lessonVideoInput" placeholder="Видео ссылка">
+
+    <div class="modal-actions">
+      <button id="saveLessonBtn">Сақтау</button>
+      <button id="cancelLessonBtn">Отмена</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="sidebar.js"></script>
+<script type="module" src="admin-js/lessons.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.profile-header {
+  margin-bottom: 24px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.profile-header p {
+  color: #64748b;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  max-width: 500px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.profile-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.profile-row span {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.profile-row strong {
+  font-size: 16px;
+}
+
+.profile-row input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+
+.save-btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.profile-header .logout-btn {
+  width: auto !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

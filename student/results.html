@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Нәтижелер</title>
+
+  <link rel="stylesheet" href="./css/student.css" />
+  <link rel="stylesheet" href="./css/results.css" />
+</head>
+<body>
+
+  <div id="studentLayout"></div>
+
+  <main class="main-content">
+    <header class="results-header">
+      <h1>Менің нәтижелерім</h1>
+      <p>Орындалған тапсырмалар мен жалпы үлгерім</p>
+    </header>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span>Орташа нәтиже</span>
+        <strong id="averagePercent">0%</strong>
+      </div>
+
+      <div class="stat-card">
+        <span>Орындалған тапсырма</span>
+        <strong id="completedCount">0</strong>
+      </div>
+
+      <div class="stat-card">
+        <span>Ең жоғары нәтиже</span>
+        <strong id="bestPercent">0%</strong>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="section-title">
+        <h2>Соңғы нәтижелер</h2>
+        <p>Соңғы тапсырылған тапсырмалар тізімі</p>
+      </div>
+
+      <div id="resultsList" class="results-list">
+        <div class="loading-box">Нәтижелер жүктелуде...</div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/results.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.task-type-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  cursor: pointer;
+  transition: 0.2s;
+  border: 2px solid transparent;
+}
+
+.task-type-card:hover {
+  transform: translateY(-4px);
+  border-color: #2563eb;
+}
+
+.task-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #e0ecff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.task-type-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.task-type-card p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.5;
+  min-height: 44px;
+}
+
+.task-status {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.task-status.soon {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: #111827;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 14px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.25s;
+  z-index: 3000;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.error {
+  background: #ef4444;
+}
+
+.toast.success {
+  background: #16a34a;
+}
+
+@media (max-width: 900px) {
+  .tasks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px; /* ← БҰЛ ҮЛКЕНІРЕК ҚЫЛДЫҚ */
+    padding: 0 6px;
+  }
+
+  .task-type-card {
+    width: 100%;
+    border-radius: 20px;
+    padding: 18px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* ← теңестіреді */
+
+    min-height: 220px; /* ← ВСЕ КАРТОЧКАЛАР БІРДЕЙ */
+  }
+
+  .task-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .task-type-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .task-type-card p {
+    font-size: 14px;
+    line-height: 1.45;
+    margin-bottom: 10px;
+  }
+
+  .task-status {
+    align-self: flex-start; /* кнопка төменде тұрады */
+    margin-top: auto;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+}

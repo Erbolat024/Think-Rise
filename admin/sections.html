@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бөлімдер</title>
+
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="admin-css/sections.css">
+  <link rel="stylesheet" href="sidebar-mobile.css">
+</head>
+<body>
+
+<main class="admin-main">
+  <div class="page-header">
+    <div>
+      <h1>Бөлімдер</h1>
+      <p>Сыныпты таңдаңыз, кейін бөлім қосыңыз</p>
+    </div>
+  </div>
+
+  <section class="class-tabs" id="classTabs"></section>
+
+  <section class="section-toolbar" id="sectionToolbar" style="display:none;">
+    <h2 id="selectedClassTitle">Сынып</h2>
+    <button id="addSectionBtn">+ Бөлім қосу</button>
+  </section>
+
+  <section class="sections-list" id="sectionsList"></section>
+</main>
+
+<div class="modal" id="sectionModal">
+  <div class="modal-content">
+    <h3 id="modalTitle">Бөлім қосу</h3>
+
+    <input id="sectionTitleInput" placeholder="Бөлім атауы">
+    <textarea id="sectionDescInput" placeholder="Қысқаша сипаттама"></textarea>
+
+    <div class="modal-actions">
+      <button id="saveSectionBtn">Сақтау</button>
+      <button id="cancelSectionBtn">Отмена</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="sidebar.js"></script>
+<script type="module" src="admin-js/sections.js"></script>
+</body>
+</html>

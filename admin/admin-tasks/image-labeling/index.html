@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Суретпен белгілеу</title>
+
+  <link rel="stylesheet" href="../../sidebar.css">
+  <link rel="stylesheet" href="../../sidebar-mobile.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="admin-main">
+  <div class="page-header">
+    <div>
+      <h1>Суретпен белгілеу</h1>
+      <p>Фото немесе схема қосып, нөмір бойынша жауап кестесін жасаңыз</p>
+    </div>
+  </div>
+
+  <section class="builder-layout">
+    <div class="builder-card">
+      <h2>Тапсырма құру</h2>
+
+      <label>Сынып</label>
+      <select id="classSelect">
+        <option value="">Сынып таңдаңыз</option>
+      </select>
+
+      <label>Бөлім</label>
+      <select id="sectionSelect" disabled>
+        <option value="">Алдымен сынып таңдаңыз</option>
+      </select>
+
+      <label>Сабақ</label>
+      <select id="lessonSelect" disabled>
+        <option value="">Алдымен бөлім таңдаңыз</option>
+      </select>
+
+      <label>Тапсырма атауы</label>
+      <input id="taskTitle" placeholder="Мысалы: Органоидтарды анықта">
+
+      <label>Нұсқаулық</label>
+      <textarea id="taskInstruction" placeholder="Суреттегі нөмірленген бөліктерді атаңыз"></textarea>
+
+      <label>Сурет жүктеу</label>
+      <input type="file" id="imageFile" accept="image/png, image/jpeg, image/jpg, image/webp">
+
+      <label>Жауаптар саны</label>
+      <input id="labelCount" type="number" min="1" value="6">
+
+      <button id="generateRowsBtn" class="main-btn">Кесте жасау</button>
+
+      <div id="answerRows" class="answer-rows"></div>
+
+      <button id="saveTaskBtn" class="save-btn">Сақтау</button>
+    </div>
+
+    <div class="preview-card">
+      <h2>Preview</h2>
+
+      <div class="preview-box">
+        <h3 id="previewTitle">Тапсырма атауы</h3>
+        <p id="previewInstruction">Нұсқаулық осы жерде шығады</p>
+
+        <img id="previewImage" class="preview-image" src="" alt="">
+
+        <table>
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Жауап</th>
+            </tr>
+          </thead>
+          <tbody id="previewTable"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="../../sidebar.js"></script>
+<!-- негізгі логика -->
+<script type="module" src="script.js"></script>
+</body>
+</html>

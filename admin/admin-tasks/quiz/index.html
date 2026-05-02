@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест тапсырмасы</title>
+
+  <link rel="stylesheet" href="../../sidebar.css">
+  <link rel="stylesheet" href="../../sidebar-mobile.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="admin-main">
+  <div class="page-header">
+    <div>
+      <h1>Тест тапсырмасы</h1>
+      <p>Бірнеше сұрақ пен жауап нұсқаларын қосыңыз</p>
+    </div>
+  </div>
+
+  <section class="builder-layout">
+    <div class="builder-card">
+      <h2>Тапсырма құру</h2>
+
+      <label>Сынып</label>
+      <select id="classSelect">
+        <option value="">Сынып таңдаңыз</option>
+      </select>
+
+      <label>Бөлім</label>
+      <select id="sectionSelect" disabled>
+        <option value="">Алдымен сынып таңдаңыз</option>
+      </select>
+
+      <label>Сабақ</label>
+      <select id="lessonSelect" disabled>
+        <option value="">Алдымен бөлім таңдаңыз</option>
+      </select>
+
+      <label>Тапсырма атауы</label>
+      <input id="taskTitle" placeholder="Мысалы: Жасуша бойынша тест">
+
+      <label>Нұсқаулық</label>
+      <textarea id="taskInstruction" placeholder="Дұрыс жауапты таңдаңыз"></textarea>
+
+      <label>Сұрақтар</label>
+      <div id="questionsContainer" class="questions-container"></div>
+
+      <button id="addQuestionBtn" type="button" class="main-btn">+ Сұрақ қосу</button>
+
+      <button id="saveTaskBtn" class="save-btn">Сақтау</button>
+    </div>
+
+    <div class="preview-card">
+      <h2>Preview</h2>
+
+      <div class="preview-box">
+        <h3 id="previewTitle">Тапсырма атауы</h3>
+        <p id="previewInstruction">Нұсқаулық осы жерде шығады</p>
+
+        <div id="previewQuestions" class="preview-questions"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="../../sidebar.js"></script>
+<!-- негізгі логика -->
+<script type="module" src="script.js"></script>
+</body>
+</html>
