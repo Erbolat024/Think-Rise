@@ -90,6 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   logoutBtn.addEventListener("click", () => {
     localStorage.clear();
-    window.location.href = "../auth/login.html";
+    window.location.href = "/auth/login.html";
   });
 });
