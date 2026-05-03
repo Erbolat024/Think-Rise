@@ -646,3 +646,244 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===============================
+   MOBILE TASK PAGES
+   =============================== */
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .task-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .task-header h1 {
+    font-size: 32px;
+    line-height: 1.15;
+    word-break: break-word;
+  }
+
+  .task-card {
+    padding: 22px 18px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  #taskContent {
+    margin-top: 18px;
+  }
+
+  .task-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #checkBtn,
+  #retryBtn {
+    min-width: 150px;
+    font-size: 16px;
+    padding: 13px 22px;
+    border-radius: 14px;
+  }
+
+  /* TRUE / FALSE */
+  .tf-card {
+    padding: 20px 16px;
+    border-radius: 22px;
+  }
+
+  .tf-question {
+    gap: 12px;
+  }
+
+  .tf-number {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .tf-question h3 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .tf-actions {
+    flex-direction: column;
+    padding-left: 56px;
+  }
+
+  .tf-btn {
+    width: 100%;
+    max-width: 190px;
+    font-size: 20px;
+    padding: 14px 18px;
+  }
+
+  /* FILL BLANK */
+  .fb-card {
+    padding: 20px 16px;
+    border-radius: 22px;
+  }
+
+  .fb-question {
+    gap: 12px;
+  }
+
+  .fb-number {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .fb-question h3 {
+    font-size: 24px;
+    line-height: 1.45;
+    word-break: break-word;
+  }
+
+  .fb-inline-input {
+    min-width: 90px;
+    max-width: 160px;
+    font-size: 20px;
+    padding: 10px 12px;
+    margin: 6px 4px;
+  }
+
+  .fb-word-title {
+    font-size: 20px;
+  }
+
+  .fb-word-btn {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  /* IMAGE LABELING */
+  .image-labeling-task {
+    gap: 18px;
+  }
+
+  .image-labeling-top {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .image-box {
+    width: 100%;
+    min-height: auto;
+    padding: 14px;
+    border-radius: 22px;
+  }
+
+  .image-labeling-img {
+    max-height: 360px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .image-labeling-table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    border-radius: 16px;
+  }
+
+  .image-labeling-table th,
+  .image-labeling-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .image-label-select {
+    min-width: 150px;
+  }
+
+  /* MATCHING */
+  .match-card {
+    grid-template-columns: 1fr;
+    padding: 18px 16px;
+    border-radius: 22px;
+  }
+
+  .match-left h3 {
+    font-size: 22px;
+  }
+
+  .line-match-wrapper {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .line-svg {
+    display: none;
+  }
+
+  .line-column {
+    gap: 12px;
+  }
+
+  .line-item {
+    font-size: 16px;
+    min-height: 50px;
+  }
+
+  /* CROSSWORD */
+  .crossword-layout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    overflow-x: hidden;
+  }
+
+  .crossword-grid {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .crossword-row {
+    height: 32px;
+  }
+
+  .crossword-cell {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
+  .crossword-input {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .task-header h1 {
+    font-size: 30px;
+  }
+
+  .task-card {
+    padding: 20px 14px;
+  }
+
+  .tf-question h3,
+  .fb-question h3 {
+    font-size: 22px;
+  }
+
+  .tf-actions {
+    padding-left: 54px;
+  }
+
+  .image-labeling-img {
+    max-height: 320px;
+  }
+}
