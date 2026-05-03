@@ -820,14 +820,14 @@ button {
     font-size: 22px;
   }
 
-  .line-match-wrapper {
+  /*.line-match-wrapper {
     grid-template-columns: 1fr;
     gap: 18px;
-  }
+  }*/
 
-  .line-svg {
+  /*.line-svg {
     display: none;
-  }
+  }*/
 
   .line-column {
     gap: 12px;
@@ -885,5 +885,42 @@ button {
 
   .image-labeling-img {
     max-height: 320px;
+  }
+}
+
+/* кос деды */ 
+@media (max-width: 700px) {
+  .line-match-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 12px 0 80px;
+  }
+
+  .line-svg {
+    display: block;
+  }
+
+  .line-column {
+    gap: 12px;
+  }
+
+  .line-item {
+    min-height: 48px;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .line-match-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .line-item {
+    font-size: 13px;
+    padding: 9px 10px;
   }
 }
