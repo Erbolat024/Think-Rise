@@ -227,20 +227,120 @@
   }
 }
 
+/* Mobile Styles */
 @media (max-width: 700px) {
+  .lesson-header {
+    margin-bottom: 18px;
+  }
+
+  .back-link {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .lesson-header h1 {
+    font-size: 34px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .lesson-header p {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .lesson-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lesson-content-card,
+  .lesson-video-card,
+  .tasks-section {
+    border-radius: 28px;
+    padding: 26px 24px;
+  }
+
+  .lesson-content-card h2,
+  .lesson-video-card h2,
+  .tasks-header h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .lesson-content {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .video-box {
+    min-height: 230px;
+    border-radius: 24px;
+  }
+
+  .video-box iframe {
+    height: 230px;
+    border-radius: 24px;
+  }
+
   .tasks-list {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .lesson-task-summary {
     grid-template-columns: 1fr;
   }
 
-  .lesson-header h1 {
-    font-size: 26px;
+  .task-card {
+    border-radius: 22px;
+    padding: 18px;
   }
 
   .task-card-top {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .task-card h3 {
+    font-size: 20px;
+  }
+
+  .task-card a {
+    width: 100%;
+    text-align: center;
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .lesson-header h1 {
+    font-size: 30px;
+  }
+
+  .lesson-header p {
+    font-size: 18px;
+  }
+
+  .lesson-content-card,
+  .lesson-video-card,
+  .tasks-section {
+    padding: 24px 20px;
+    border-radius: 24px;
+  }
+
+  .lesson-content-card h2,
+  .lesson-video-card h2,
+  .tasks-header h2 {
+    font-size: 26px;
+  }
+
+  .video-box {
+    min-height: 200px;
+  }
+
+  .video-box iframe {
+    height: 200px;
   }
 }
